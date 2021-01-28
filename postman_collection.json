@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "6bfd378b-47b9-41a4-985d-b3df6324271a",
+		"name": "Slingshot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/accounts/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/accounts/:id",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{id}/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/accounts/:accountId/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						":accountId",
+						"users"
+					],
+					"variable": [
+						{
+							"key": "accountId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{id}/users/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/accounts/:accountId/users/:userId",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						":accountId",
+						"users",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "accountId",
+							"value": "1"
+						},
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/accounts",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyName\": \"Godofredo Enterprise\",\r\n    \"website\": \"https://godofredo.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/accounts",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{id}/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"godofredo@godofredo.com\",\r\n    \"firstName\": \"Godofredo\",\r\n    \"lastName\": \"Lafaiete\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/accounts/:accountId/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						":accountId",
+						"users"
+					],
+					"variable": [
+						{
+							"key": "accountId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyName\": \"Godofredo Enterprise\",\r\n    \"website\": \"https://godofredo.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/accounts/:id",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{id}/users/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"godofredo@godofredo.com\",\r\n    \"firstName\": \"Godofredo\",\r\n    \"lastName\": \"Lafaiete\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/accounts/:accountId/users/:userId",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						":accountId",
+						"users",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "accountId",
+							"value": "1"
+						},
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/accounts/:id",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{id}/users/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/accounts/:accountId/users/:userId",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						":accountId",
+						"users",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "accountId",
+							"value": "1"
+						},
+						{
+							"key": "userId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:5000"
+		}
+	]
+}
